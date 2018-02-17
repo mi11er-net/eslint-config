@@ -6,6 +6,7 @@ const ERROR = 2;
 const rules = {
   'no-param-reassign': [ERROR, { props: false }],
   'valid-jsdoc': [ERROR],
+  complexity: [ERROR, 6],
 };
 
 if (extendedConfigs.plugins.includes('optimize-regex')) {
