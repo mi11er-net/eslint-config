@@ -1,5 +1,9 @@
 # Dependency directories
 /node_modules/
 
+# Node
+/.npmrc
+
 # Release Dir
 /release/
+
