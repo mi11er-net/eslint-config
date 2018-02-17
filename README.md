@@ -18,6 +18,7 @@ yarn add -D eslint @mi11er/eslint-config
 
 You most likely want to also install additional plugins/configs for ESLint. If you do, the following ones are automatically detected and configured for you.
 
+1. `eslint-plugin-optimize-regex`
 1. `eslint-config-airbnb` OR `eslint-config-airbnb-base`
    * `eslint-plugin-import`
    * `eslint-plugin-jsx-a11y`
