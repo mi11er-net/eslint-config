@@ -1,5 +1,7 @@
 # @mi11er/eslint-config
 
+[![Build Status](https://travis-ci.org/mi11er-net/eslint-config.svg?branch=master)](https://travis-ci.org/mi11er-net/eslint-config)
+
 Combines various plugins and rulesets for use in mi11er.net projects.
 
 ## Installation
