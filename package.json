@@ -1,9 +1,11 @@
 {
   "name": "@mi11er/eslint-config",
-  "version": "1.0.0",
-  "description":
-    "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
-  "keywords": ["eslint", "eslint-config"],
+  "version": "1.1.0",
+  "description": "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "homepage": "https://github.com/mi11er-net/eslint-config",
   "bugs": {
     "url": "https://github.com/mi11er-net/eslint-config/issues"
@@ -82,7 +84,9 @@
       },
       {
         "path": "@semantic-release/git",
-        "assets": ["**"]
+        "assets": [
+          "**"
+        ]
       },
       {
         "path": "@semantic-release/github",
