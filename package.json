@@ -1,6 +1,6 @@
 {
   "name": "@mi11er/eslint-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
   "keywords": [
     "eslint",
