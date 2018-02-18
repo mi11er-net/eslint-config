@@ -1,3 +1,11 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/mi11er-net/eslint-config/compare/v1.2.0...v1.2.1) (2018-02-18)
+
+
+### Bug Fixes
+
+* **jsdoc:** remove requirement for return statemnt ([7a40ca0](https://github.com/mi11er-net/eslint-config/commit/7a40ca0))
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/mi11er-net/eslint-config/compare/v1.1.0...v1.2.0) (2018-02-18)
 
