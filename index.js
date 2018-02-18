@@ -5,7 +5,7 @@ const ERROR = 2;
 
 const rules = {
   'no-param-reassign': [ERROR, { props: false }],
-  'valid-jsdoc': [ERROR],
+  'valid-jsdoc': [ERROR, { requireReturn: false }],
   complexity: [ERROR, 6],
 };
 
