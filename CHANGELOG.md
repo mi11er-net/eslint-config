@@ -1,3 +1,22 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/mi11er-net/eslint-config/compare/v1.2.1...v2.0.0) (2018-02-22)
+
+
+### Code Refactoring
+
+* **dependencies:** load configs locally and make plugins peerDependencies ([21c0244](https://github.com/mi11er-net/eslint-config/commit/21c0244))
+
+
+### Features
+
+* **security:** add ScanJs eslint plugin and rules ([6736893](https://github.com/mi11er-net/eslint-config/commit/6736893))
+
+
+### BREAKING CHANGES
+
+* **dependencies:** linting will now error if the required plugins are not installed. If desired you
+must specify the react config.
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/mi11er-net/eslint-config/compare/v1.2.0...v1.2.1) (2018-02-18)
 
