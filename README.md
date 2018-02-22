@@ -9,25 +9,17 @@ Combines various plugins and rulesets for use in mi11er.net projects.
 
 ## Installation
 
+Note: don't forget the require peerDepencies.
+
 ```shell
-npm install --save-dev eslint @mi11er/eslint-config
+npm install --save-dev eslint @mi11er/eslint-config eslint-plugin-optimize-regex eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-security
 ```
 
 or
 
 ```shell
-yarn add -D eslint @mi11er/eslint-config
+yarn add -D eslint @mi11er/eslint-config eslint-plugin-optimize-regex eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-security
 ```
-
-You most likely want to also install additional plugins/configs for ESLint. If you do, the following ones are automatically detected and configured for you.
-
-1. `eslint-plugin-optimize-regex`
-1. `eslint-config-airbnb` OR `eslint-config-airbnb-base`
-   * `eslint-plugin-import`
-   * `eslint-plugin-jsx-a11y`
-   * `eslint-plugin-react`
-1. `eslint-plugin-security`
-1. `eslint-config-prettier`
 
 ## Setup
 
@@ -36,5 +28,13 @@ Add the config to your `.eslintrc` file:
 ```json
 {
   "extends": "@mi11er"
+}
+```
+
+or for react/preact based projects
+
+```json
+{
+  "extends": "@mi11er/eslint-config/react"
 }
 ```
