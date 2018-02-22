@@ -26,9 +26,10 @@
     "url": "https://github.com/mi11er-net/eslint-config.git"
   },
   "scripts": {
-    "precommit": "run-s lint-staged pretty-quick",
+    "precommit": "run-s lint-staged pretty-quick nsp",
     "lint": "eslint --fix .",
     "lint-staged": "lint-staged",
+    "nsp": "nsp check",
     "semantic-release": "semantic-release",
     "pretty-quick": "pretty-quick --staged"
   },
