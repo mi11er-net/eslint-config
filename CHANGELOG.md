@@ -1,3 +1,11 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/mi11er-net/eslint-config/compare/v2.0.0...v2.1.0) (2018-02-26)
+
+
+### Features
+
+* **security:** Change eslint-plugin-security rules to error ([d47cd49](https://github.com/mi11er-net/eslint-config/commit/d47cd49))
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/mi11er-net/eslint-config/compare/v1.2.1...v2.0.0) (2018-02-22)
 
