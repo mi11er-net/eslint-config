@@ -1,3 +1,11 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/mi11er-net/eslint-config/compare/v2.1.0...v2.2.0) (2018-02-28)
+
+
+### Features
+
+* **extensions:** Add .mjs to list of support extentions ([a78be7e](https://github.com/mi11er-net/eslint-config/commit/a78be7e))
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/mi11er-net/eslint-config/compare/v2.0.0...v2.1.0) (2018-02-26)
 
