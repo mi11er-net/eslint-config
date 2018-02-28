@@ -5,6 +5,5 @@ const extendedConfigs = [
 ].map(require.resolve);
 
 module.exports = {
-  parser: 'babel-eslint',
   extends: extendedConfigs,
 };
