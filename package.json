@@ -1,11 +1,9 @@
 {
   "name": "@mi11er/eslint-config",
   "version": "2.2.0",
-  "description": "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
+  "description":
+    "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
+  "keywords": ["eslint", "eslint-config"],
   "homepage": "https://github.com/mi11er-net/eslint-config",
   "bugs": {
     "url": "https://github.com/mi11er-net/eslint-config/issues"
@@ -46,9 +44,8 @@
     "eslint-config-prettier": "2.9.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "1.0.1",
-    "@semantic-release/exec": "2.0.1",
-    "@semantic-release/git": "3.0.1",
+    "@semantic-release/changelog": "2.0.1",
+    "@semantic-release/git": "4.0.1",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "4.18.2",
@@ -66,7 +63,7 @@
     "nsp": "3.2.1",
     "prettier": "1.11.1",
     "pretty-quick": "1.4.1",
-    "semantic-release": "13.0.1",
+    "semantic-release": "15.0.2",
     "sort-package-json": "1.11.0"
   },
   "peerDependencies": {
@@ -87,7 +84,7 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ],
-    "publish": [
+    "prepare": [
       "@semantic-release/changelog",
       {
         "path": "@semantic-release/npm",
@@ -95,10 +92,11 @@
       },
       {
         "path": "@semantic-release/git",
-        "assets": [
-          "**"
-        ]
-      },
+        "assets": ["**"]
+      }
+    ],
+    "publish": [
+      "@semantic-release/npm",
       {
         "path": "@semantic-release/github",
         "assets": [
