@@ -13,11 +13,7 @@ node_js:
 
 before_install:
 - yarn config set progress=false
-- yarn global add greenkeeper-lockfile@1
-before_script: greenkeeper-lockfile-update
 script: yarn lint
-after_script:
-- greenkeeper-lockfile-upload
 
 before_deploy:
   - .travis/setup-git.sh > /dev/null 2>&1
