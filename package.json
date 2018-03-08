@@ -1,11 +1,9 @@
 {
   "name": "@mi11er/eslint-config",
   "version": "2.2.0",
-  "description": "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
+  "description":
+    "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
+  "keywords": ["eslint", "eslint-config"],
   "homepage": "https://github.com/mi11er-net/eslint-config",
   "bugs": {
     "url": "https://github.com/mi11er-net/eslint-config/issues"
@@ -87,7 +85,7 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ],
-    "publish": [
+    "prepare": [
       "@semantic-release/changelog",
       {
         "path": "@semantic-release/npm",
@@ -95,10 +93,11 @@
       },
       {
         "path": "@semantic-release/git",
-        "assets": [
-          "**"
-        ]
-      },
+        "assets": ["**"]
+      }
+    ],
+    "publish": [
+      "@semantic-release/npm",
       {
         "path": "@semantic-release/github",
         "assets": [
