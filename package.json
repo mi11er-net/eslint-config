@@ -67,7 +67,7 @@
     "sort-package-json": "1.11.0"
   },
   "peerDependencies": {
-    "eslint": "^4.18.1",
+    "eslint": "^4.19.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
