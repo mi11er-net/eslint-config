@@ -1,11 +1,9 @@
 {
   "name": "@mi11er/eslint-config",
   "version": "2.2.1",
-  "description": "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
+  "description":
+    "@mi11er/eslint-config combines various plugins and rulesets for use in mi11er.net projects",
+  "keywords": ["eslint", "eslint-config"],
   "homepage": "https://github.com/mi11er-net/eslint-config",
   "bugs": {
     "url": "https://github.com/mi11er-net/eslint-config/issues"
@@ -33,6 +31,7 @@
     "lint-staged": "lint-staged",
     "nsp": "nsp check",
     "semantic-release": "semantic-release",
+    "test": "run-s lint",
     "pretty-quick": "pretty-quick --staged"
   },
   "config": {
@@ -50,9 +49,9 @@
     "@semantic-release/git": "4.0.1",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
-    "eslint": "4.19.0",
+    "eslint": "4.19.1",
     "eslint-index": "1.4.0",
-    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-import": "2.10.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-no-unsafe-innerhtml": "1.0.16",
     "eslint-plugin-optimize-regex": "1.1.5",
@@ -69,8 +68,8 @@
     "sort-package-json": "1.11.0"
   },
   "peerDependencies": {
-    "eslint": "^4.19.0",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
     "eslint-plugin-optimize-regex": "^1.1.5",
@@ -94,9 +93,7 @@
       },
       {
         "path": "@semantic-release/git",
-        "assets": [
-          "**"
-        ]
+        "assets": ["**"]
       }
     ],
     "publish": [
