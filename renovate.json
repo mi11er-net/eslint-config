@@ -1,3 +1,4 @@
 {
-  "extends": ["@mi11er"]
+  "extends": ["@mi11er"],
+  "peerDependencies": { "enabled": true }
 }
