@@ -1,3 +1,11 @@
+<a name="2.2.2"></a>
+## [2.2.2](https://github.com/mi11er-net/eslint-config/compare/v2.2.1...v2.2.2) (2018-04-03)
+
+
+### Bug Fixes
+
+* **packages:** update eslint and peerDependencies ([48e960d](https://github.com/mi11er-net/eslint-config/commit/48e960d)), closes [#38](https://github.com/mi11er-net/eslint-config/issues/38)
+
 <a name="2.2.1"></a>
 ## [2.2.1](https://github.com/mi11er-net/eslint-config/compare/v2.2.0...v2.2.1) (2018-03-17)
 
