@@ -64,7 +64,7 @@
     "nsp": "3.2.1",
     "prettier": "1.12.1",
     "pretty-quick": "1.6.0",
-    "semantic-release": "15.4.1",
+    "semantic-release": "15.5.0",
     "sort-package-json": "1.15.0"
   },
   "peerDependencies": {
