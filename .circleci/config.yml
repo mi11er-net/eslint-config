@@ -11,9 +11,9 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - v1-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
-          - v1-dependencies-{{ .Branch }}-
-          - v1-dependencies-
+          - v2-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          - v2-dependencies-{{ .Branch }}-
+          - v2-dependencies-
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@latest'
@@ -21,7 +21,7 @@ jobs:
           name: install-npm-depndencies
           command: 'npm ci'
       - save_cache:
-          key: v1-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          key: v2-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
             - $HOME/.npm
       - run:
