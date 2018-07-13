@@ -32,7 +32,6 @@
     "lint": "eslint --fix .",
     "lint-staged": "lint-staged",
     "nsp": "nsp check",
-    "semantic-release": "semantic-release",
     "test": "run-s lint",
     "pretty-quick": "pretty-quick --staged"
   },
