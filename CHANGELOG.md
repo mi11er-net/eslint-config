@@ -1,3 +1,9 @@
+# [2.4.0](https://github.com/mi11er-net/eslint-config/compare/v2.3.0...v2.4.0) (2018-07-31)
+
+### Features
+
+- **node:** add new eslint-node rules ([1f86ac3](https://github.com/mi11er-net/eslint-config/commit/1f86ac3))
+
 # [2.3.0](https://github.com/mi11er-net/eslint-config/compare/v2.2.2...v2.3.0) (2018-07-13)
 
 ### Features
