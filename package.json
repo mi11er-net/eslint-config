@@ -47,7 +47,7 @@
   "dependencies": {
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "4.1.0"
+    "eslint-config-prettier": "7.2.0"
   },
   "devDependencies": {
     "@capaj/npm-audit-ci": "1.0.5",
