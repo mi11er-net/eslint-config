@@ -65,7 +65,7 @@
     "npm-run-all2": "5.0.0",
     "prettier": "1.19.1",
     "pretty-quick": "1.11.1",
-    "semantic-release": "15.13.3",
+    "semantic-release": "17.2.3",
     "sort-package-json": "1.57.0"
   },
   "peerDependencies": {
