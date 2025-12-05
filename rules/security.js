@@ -3,7 +3,7 @@ const env = {
   es6: true,
 };
 
-const plugins = ['security', 'scanjs-rules', 'no-unsafe-innerhtml'];
+const plugins = ['security', 'scanjs-rules', 'no-unsanitized'];
 
 const rules = {
   /**
@@ -24,8 +24,9 @@ const rules = {
   'security/detect-pseudoRandomBytes': 'error',
   'security/detect-unsafe-regex': 'error',
 
-  /* no-unsafe-innerhtml rule */
-  'no-unsafe-innerhtml/no-unsafe-innerhtml': 'error',
+  /* no-unsanitized rules (replacement for no-unsafe-innerhtml) */
+  'no-unsanitized/method': 'error',
+  'no-unsanitized/property': 'error',
 
   /* ScanJS rules */
   'scanjs-rules/accidental_assignment': 'warn',

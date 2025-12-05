@@ -82,9 +82,9 @@
     ]
   },
   "dependencies": {
-    "eslint-config-airbnb": "17.1.1",
-    "eslint-config-airbnb-base": "13.2.0",
-    "eslint-config-prettier": "4.3.0"
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "10.1.8"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
@@ -92,33 +92,35 @@
     "@semantic-release/git": "10.0.1",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "5.16.0",
+    "eslint": "8.57.1",
     "eslint-index": "1.5.0",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-no-unsafe-innerhtml": "1.0.16",
-    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-n": "17.23.1",
+    "eslint-plugin-no-unsanitized": "4.1.4",
     "eslint-plugin-optimize-regex": "1.2.1",
     "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-scanjs-rules": "0.2.1",
-    "eslint-plugin-security": "1.7.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "npm-run-all2": "5.0.2",
-    "prettier": "1.19.1",
-    "pretty-quick": "1.11.1",
+    "eslint-plugin-security": "3.0.1",
+    "husky": "9.1.7",
+    "lint-staged": "16.2.7",
+    "npm-run-all2": "8.0.4",
+    "prettier": "3.7.4",
+    "pretty-quick": "4.2.2",
     "semantic-release": "24.2.9",
-    "sort-package-json": "1.57.0"
+    "sort-package-json": "3.5.0"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1 || ^5.0.0 || ^9.0.0",
-    "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-no-unsafe-innerhtml": "^1.0.16",
-    "eslint-plugin-node": "^6.0.1 || ^7.0.0 || ^8.0.0 || ^11.0.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-n": "^17.0.0",
+    "eslint-plugin-no-unsanitized": "^4.0.0",
     "eslint-plugin-optimize-regex": "^1.1.5",
-    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-scanjs-rules": "^0.2.1",
-    "eslint-plugin-security": "^1.4.0 || ^3.0.0"
+    "eslint-plugin-security": "^3.0.0"
   }
 }
