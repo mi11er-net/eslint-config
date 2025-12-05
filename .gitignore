@@ -7,3 +7,5 @@
 # Release Dir
 /release/
 
+# Downloaded packages
+*.tgz

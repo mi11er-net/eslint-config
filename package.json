@@ -45,9 +45,9 @@
     "eslint-config-prettier": "4.1.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "3.0.6",
-    "@semantic-release/exec": "3.3.8",
-    "@semantic-release/git": "7.0.18",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/exec": "7.1.0",
+    "@semantic-release/git": "10.0.1",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "5.16.0",
@@ -65,7 +65,7 @@
     "npm-run-all2": "5.0.0",
     "prettier": "1.19.1",
     "pretty-quick": "1.11.1",
-    "semantic-release": "15.13.3",
+    "semantic-release": "24.2.9",
     "sort-package-json": "1.57.0"
   },
   "peerDependencies": {
@@ -80,7 +80,7 @@
     "eslint-plugin-security": "^1.4.0"
   },
   "release": {
-    "branch": "master",
+    "branches": ["master"],
     "verifyConditions": [
       "@semantic-release/changelog",
       "@semantic-release/npm",
