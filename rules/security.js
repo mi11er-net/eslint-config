@@ -3,12 +3,12 @@ const env = {
   es6: true,
 };
 
-const plugins = ['security', 'scanjs-rules', 'no-unsafe-innerhtml'];
+const plugins = ['security', 'scanjs-rules', 'no-unsanitized'];
 
 const rules = {
   /**
    *  security rules
-   *  https://github.com/nodesecurity/eslint-plugin-security
+   *  https://github.com/eslint-community/eslint-plugin-security
    */
   'security/detect-buffer-noassert': 'error',
   'security/detect-child-process': 'error',
@@ -24,8 +24,9 @@ const rules = {
   'security/detect-pseudoRandomBytes': 'error',
   'security/detect-unsafe-regex': 'error',
 
-  /* no-unsafe-innerhtml rule */
-  'no-unsafe-innerhtml/no-unsafe-innerhtml': 'error',
+  /* no-unsanitized rules (replaces no-unsafe-innerhtml) */
+  'no-unsanitized/method': 'error',
+  'no-unsanitized/property': 'error',
 
   /* ScanJS rules */
   'scanjs-rules/accidental_assignment': 'warn',
