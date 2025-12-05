@@ -1,38 +1,36 @@
-defaults: &defaults
-  working_directory: ~/project/repo
-  docker:
-    - image: circleci/node:latest@sha256:4c3a4100e1a6049a03eb3573c3ca2980f54edd10cfaec5294b4d25ec4ef31fcd
+version: 2.1
 
-version: 2
+executors:
+  node:
+    working_directory: ~/project/repo
+    docker:
+      - image: cimg/node:lts
+
 jobs:
   test:
-    <<: *defaults
+    executor: node
     steps:
       - checkout
       - restore_cache:
           keys:
-          - v2-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
-          - v2-dependencies-{{ .Branch }}-
-          - v2-dependencies-
+            - v3-dependencies-{{ checksum "package-lock.json" }}
+            - v3-dependencies-
       - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@latest'
-      - run:
-          name: install-npm-depndencies
-          command: 'npm ci'
+          name: install-npm-dependencies
+          command: npm ci
       - save_cache:
-          key: v2-dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          key: v3-dependencies-{{ checksum "package-lock.json" }}
           paths:
-            - $HOME/.npm
+            - ~/.npm
       - run:
           name: test
-          command: 'npm test'
+          command: npm test
       - persist_to_workspace:
           root: ~/project
           paths:
             - repo
   release:
-    <<: *defaults
+    executor: node
     steps:
       - attach_workspace:
           at: ~/project
@@ -40,7 +38,6 @@ jobs:
       - run: npx semantic-release
 
 workflows:
-  version: 2
   test_and_release:
     jobs:
       - test
