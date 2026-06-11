@@ -1,10 +1,6 @@
-const extendedConfigs = [
-  './rules/base',
-  './rules/react',
-  './rules/security',
-  './rules/prettier',
-].map(require.resolve);
-
-module.exports = {
-  extends: extendedConfigs,
-};
+module.exports = [
+  ...require('./rules/base'),
+  ...require('./rules/react'),
+  ...require('./rules/security'),
+  ...require('./rules/prettier'),
+];

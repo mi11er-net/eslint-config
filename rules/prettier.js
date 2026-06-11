@@ -1,5 +1,3 @@
-const extendedConfig = ['eslint-config-prettier'].map(require.resolve);
+const prettierConfig = require('eslint-config-prettier/flat');
 
-module.exports = {
-  extends: extendedConfig,
-};
+module.exports = [prettierConfig];
