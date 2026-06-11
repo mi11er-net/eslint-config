@@ -1,4 +1,4 @@
-/* eslint-disable no-console, no-process-exit */
+/* eslint-disable no-process-exit */
 /**
  * Security audit script
  * Checks for critical vulnerabilities in production dependencies
@@ -19,7 +19,7 @@ try {
     .split('\n')
     .filter((p) => p.indexOf('node_modules') === -1);
   npmPath = npmPaths[0] || 'npm';
-} catch (err) {
+} catch {
   npmPath = 'npm';
 }
 
