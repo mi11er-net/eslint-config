@@ -1,35 +1,27 @@
-const js = require('@eslint/js');
-const pluginOptimizeRegex = require('eslint-plugin-optimize-regex');
-const pluginImport = require('eslint-plugin-import');
+import js from '@eslint/js';
+import pluginOptimizeRegex from 'eslint-plugin-optimize-regex';
+import pluginImportX from 'eslint-plugin-import-x';
 
-module.exports = [
+export default [
   js.configs.recommended,
   {
     plugins: {
       'optimize-regex': pluginOptimizeRegex,
-      import: pluginImport,
+      'import-x': pluginImportX,
     },
     rules: {
       'optimize-regex/optimize-regex': 'warn',
       'no-param-reassign': ['error', { props: false }],
       complexity: ['error', 6],
-      'import/extensions': [
-        'error',
-        'always',
-        {
-          js: 'never',
-          jsx: 'never',
-          mjs: 'never',
-        },
-      ],
+      'import-x/extensions': ['error', 'always', { ignorePackages: true }],
     },
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         node: {
           extensions: ['.js', '.json', '.mjs'],
         },
       },
-      'import/extensions': ['.js', '.jsx', '.mjs'],
+      'import-x/extensions': ['.js', '.jsx', '.mjs'],
     },
   },
 ];

@@ -1,7 +1,7 @@
-const pluginN = require('eslint-plugin-n');
-const globals = require('globals');
+import pluginN from 'eslint-plugin-n';
+import globals from 'globals';
 
-module.exports = [
+export default [
   {
     plugins: { n: pluginN },
     languageOptions: {

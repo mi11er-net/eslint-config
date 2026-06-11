@@ -17,7 +17,11 @@
   "license": "MIT",
   "author": "Matthew Miller <matthew@mi11er.net> (https://mi11er.net)",
   "contributors": [],
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js"
+  },
   "files": [
     "package.json",
     "README.md",
@@ -28,7 +32,7 @@
     "rules"
   ],
   "scripts": {
-    "audit": "node scripts/audit.js",
+    "audit": "node scripts/audit.cjs",
     "lint": "eslint --fix .",
     "lint-staged": "lint-staged",
     "prepare": "husky",
@@ -94,13 +98,13 @@
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^9.0.0",
     "eslint-index": "1.5.0",
-    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-import-x": "^4.16.2",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-n": "^17.23.1",
     "eslint-plugin-no-unsanitized": "^4.1.4",
     "eslint-plugin-optimize-regex": "1.2.1",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-security": "^4.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
@@ -112,13 +116,13 @@
   },
   "peerDependencies": {
     "eslint": "^9.0.0 || ^10.0.0",
-    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import-x": "^4.0.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-n": "^17.0.0",
     "eslint-plugin-no-unsanitized": "^4.0.0",
     "eslint-plugin-optimize-regex": "^1.1.5",
     "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-security": "^4.0.0"
   }
 }

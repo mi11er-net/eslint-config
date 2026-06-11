@@ -1,8 +1,8 @@
-const pluginSecurity = require('eslint-plugin-security');
-const pluginNoUnsanitized = require('eslint-plugin-no-unsanitized');
-const globals = require('globals');
+import pluginSecurity from 'eslint-plugin-security';
+import pluginNoUnsanitized from 'eslint-plugin-no-unsanitized';
+import globals from 'globals';
 
-module.exports = [
+export default [
   {
     plugins: {
       security: pluginSecurity,

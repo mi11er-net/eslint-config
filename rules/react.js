@@ -1,7 +1,7 @@
-const pluginReact = require('eslint-plugin-react');
-const pluginReactHooks = require('eslint-plugin-react-hooks');
+import pluginReact from 'eslint-plugin-react';
+import pluginReactHooks from 'eslint-plugin-react-hooks';
 
-module.exports = [
+export default [
   pluginReact.configs.flat.recommended,
   {
     plugins: {
@@ -12,7 +12,7 @@ module.exports = [
       'react-hooks/exhaustive-deps': 'warn',
     },
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         node: {
           extensions: ['.js', '.jsx', '.json', '.mjs'],
         },
