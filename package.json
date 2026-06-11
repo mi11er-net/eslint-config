@@ -88,7 +88,7 @@
   "dependencies": {
     "@eslint/js": "^9.0.0",
     "eslint-config-prettier": "^10.1.8",
-    "globals": "^16.0.0"
+    "globals": "^17.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
