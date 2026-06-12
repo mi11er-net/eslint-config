@@ -35,7 +35,16 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run: .circleci/setup-git.sh > /dev/null 2>&1
-      - run: npx semantic-release
+      - run:
+          name: Get npm OIDC token
+          command: |
+            NPM_ID_TOKEN=$(circleci run oidc get --claims '{"aud": "npm:registry.npmjs.org"}')
+            echo "export NPM_ID_TOKEN=$NPM_ID_TOKEN" >> "$BASH_ENV"
+      - run:
+          name: release
+          command: npx semantic-release
+          environment:
+            NPM_CONFIG_PROVENANCE: "true"
 
 workflows:
   test_and_release:
