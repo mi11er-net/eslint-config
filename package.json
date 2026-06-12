@@ -46,8 +46,8 @@
     "prepare": [
       "@semantic-release/changelog",
       {
-        "path": "@semantic-release/npm",
-        "tarballDir": "release"
+        "path": "@semantic-release/exec",
+        "cmd": "npm --no-git-tag-version version ${nextRelease.version} && npm pack --pack-destination release"
       },
       {
         "path": "@semantic-release/exec",
@@ -67,7 +67,10 @@
       }
     ],
     "publish": [
-      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/exec",
+        "cmd": "npm publish release/*.tgz --provenance"
+      },
       {
         "path": "@semantic-release/github",
         "assets": [
@@ -80,7 +83,6 @@
     ],
     "verifyConditions": [
       "@semantic-release/changelog",
-      "@semantic-release/npm",
       "@semantic-release/git",
       "@semantic-release/github"
     ]
@@ -95,7 +97,6 @@
     "@semantic-release/exec": "^7.1.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^12.0.8",
-    "@semantic-release/npm": "^13.1.5",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^10.0.0",
