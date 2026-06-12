@@ -47,7 +47,7 @@
       "@semantic-release/changelog",
       {
         "path": "@semantic-release/exec",
-        "cmd": "npm --no-git-tag-version version ${nextRelease.version} && npm pack --pack-destination release"
+        "cmd": "npm --no-git-tag-version version ${nextRelease.version} && mkdir -p release && npm pack --pack-destination release"
       },
       {
         "path": "@semantic-release/exec",
