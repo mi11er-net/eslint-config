@@ -1,3 +1,9 @@
+## [3.0.3](https://github.com/mi11er-net/eslint-config/compare/v3.0.2...v3.0.3) (2026-06-14)
+
+### Bug Fixes
+
+- **ci:** remove --provenance flag; npm provenance does not support CircleCI ([197abe4](https://github.com/mi11er-net/eslint-config/commit/197abe41beb7b750a048de0adde11209e2eda5d2))
+
 ## [3.0.2](https://github.com/mi11er-net/eslint-config/compare/v3.0.1...v3.0.2) (2026-06-14)
 
 ### Bug Fixes
