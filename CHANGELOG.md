@@ -1,3 +1,9 @@
+## [3.0.4](https://github.com/mi11er-net/eslint-config/compare/v3.0.3...v3.0.4) (2026-06-14)
+
+### Bug Fixes
+
+- **deps:** remove unused eslint-index and resolve all audit vulnerabilities ([138b28d](https://github.com/mi11er-net/eslint-config/commit/138b28d8fa21613c0530466d7cdb4b978d984b15))
+
 ## [3.0.3](https://github.com/mi11er-net/eslint-config/compare/v3.0.2...v3.0.3) (2026-06-14)
 
 ### Bug Fixes
