@@ -69,7 +69,7 @@
     "publish": [
       {
         "path": "@semantic-release/exec",
-        "cmd": "npm publish release/*.tgz --provenance"
+        "cmd": "npm publish ./release/*.tgz --provenance"
       },
       {
         "path": "@semantic-release/github",
