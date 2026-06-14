@@ -1,3 +1,9 @@
+## [3.0.5](https://github.com/mi11er-net/eslint-config/compare/v3.0.4...v3.0.5) (2026-06-14)
+
+### Bug Fixes
+
+- mark React-only peer deps as optional via peerDependenciesMeta ([8ad9ba0](https://github.com/mi11er-net/eslint-config/commit/8ad9ba06579cc9b14306d5a651171705a630cc4b)), closes [#245](https://github.com/mi11er-net/eslint-config/issues/245)
+
 ## [3.0.4](https://github.com/mi11er-net/eslint-config/compare/v3.0.3...v3.0.4) (2026-06-14)
 
 ### Bug Fixes
