@@ -1,3 +1,34 @@
+# [3.0.0](https://github.com/mi11er-net/eslint-config/compare/v2.4.1...v3.0.0) (2026-06-14)
+
+- feat!: prepare v3.0.0 — ESLint 10, dep bumps, legacy-peer-deps ([ab9657a](https://github.com/mi11er-net/eslint-config/commit/ab9657afe4cc0690f1b555083142614135d845db)), closes [#226](https://github.com/mi11er-net/eslint-config/issues/226)
+
+### Bug Fixes
+
+- **ci:** bypass @semantic-release/npm auth using exec + npm publish directly ([665d9f3](https://github.com/mi11er-net/eslint-config/commit/665d9f39d559d4e6aa984d2b68fbfd57f3a27d9b)), closes [semantic-release/npm#1121](https://github.com/semantic-release/npm/issues/1121)
+- **ci:** mkdir -p release before npm pack (directory is gitignored) ([eafe689](https://github.com/mi11er-net/eslint-config/commit/eafe689df9fdf37c0a8d3657cbde41063729cf83))
+- **ci:** switch npm publish to OIDC trusted publishing ([748b0e4](https://github.com/mi11er-net/eslint-config/commit/748b0e4b2a7c85ac70ac94033781fd973e5505cd))
+- **ci:** upgrade semantic-release stack and pin Node for OIDC support ([96c400c](https://github.com/mi11er-net/eslint-config/commit/96c400cde5dd6108b28dc69046f1e3df30a91764))
+- **deps:** update dependency eslint-config-airbnb to v17.1.1 ([4730d2e](https://github.com/mi11er-net/eslint-config/commit/4730d2e43991d79b27384f8a584d232127251d9c))
+- **deps:** update dependency eslint-config-airbnb-base to v13.2.0 ([095f13e](https://github.com/mi11er-net/eslint-config/commit/095f13ec02273a85db1b945bef3661741c362851))
+- **deps:** update dependency eslint-config-prettier to v4.3.0 ([e8b6f3a](https://github.com/mi11er-net/eslint-config/commit/e8b6f3af995970d1353b5334d09caa9832dcd68a))
+- **deps:** update eslint monorepo to v10 ([d49bd98](https://github.com/mi11er-net/eslint-config/commit/d49bd98fa70b170bca9079a176ea3bd189b1efb9))
+
+### Features
+
+- convert package to ESM (Phase 2) ([dc1483c](https://github.com/mi11er-net/eslint-config/commit/dc1483c59297fba8ca4f18054bdbfae79deb74b0)), closes [#225](https://github.com/mi11er-net/eslint-config/issues/225)
+- migrate to ESLint flat config format (Phase 1) ([c3213ff](https://github.com/mi11er-net/eslint-config/commit/c3213ffabc0a7ee2484a0185f255495f7826a90f)), closes [#224](https://github.com/mi11er-net/eslint-config/issues/224)
+
+### BREAKING CHANGES
+
+- Package now requires flat config (no eslintrc support).
+  Consumers must use eslint.config.js (or .mjs) with ESM import syntax.
+  ESLint 8 is no longer supported. Peer dep changes:
+
+* eslint ^9.0.0 || ^10.0.0 (was ^8.23.0 || ^9.0.0 || ^10.0.0)
+* eslint-plugin-import-x ^4.0.0 (replaces eslint-plugin-import)
+* eslint-plugin-react-hooks ^7.0.0 (was ^4.3.0)
+* eslint-plugin-scanjs-rules removed (unmaintained, no flat config support)
+
 ## [2.4.1](https://github.com/mi11er-net/eslint-config/compare/v2.4.0...v2.4.1) (2019-04-01)
 
 ### Bug Fixes
