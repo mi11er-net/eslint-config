@@ -1,3 +1,9 @@
+## [3.0.2](https://github.com/mi11er-net/eslint-config/compare/v3.0.1...v3.0.2) (2026-06-14)
+
+### Bug Fixes
+
+- **ci:** force 3.0.2 release after failed 3.0.1 publish attempts ([ec26627](https://github.com/mi11er-net/eslint-config/commit/ec2662784da949b81a91fef38a680bc9d2735327))
+
 ## [3.0.1](https://github.com/mi11er-net/eslint-config/compare/v3.0.0...v3.0.1) (2026-06-14)
 
 ### Bug Fixes
