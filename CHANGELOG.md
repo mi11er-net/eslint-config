@@ -1,3 +1,9 @@
+## [3.0.1](https://github.com/mi11er-net/eslint-config/compare/v3.0.0...v3.0.1) (2026-06-14)
+
+### Bug Fixes
+
+- **ci:** use ./release path prefix for npm publish to avoid GitHub shorthand interpretation ([a7ffbd3](https://github.com/mi11er-net/eslint-config/commit/a7ffbd357a231774586ad9cabf67a71473435e16))
+
 # [3.0.0](https://github.com/mi11er-net/eslint-config/compare/v2.4.1...v3.0.0) (2026-06-14)
 
 - feat!: prepare v3.0.0 — ESLint 10, dep bumps, legacy-peer-deps ([ab9657a](https://github.com/mi11er-net/eslint-config/commit/ab9657afe4cc0690f1b555083142614135d845db)), closes [#226](https://github.com/mi11er-net/eslint-config/issues/226)
