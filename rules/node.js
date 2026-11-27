@@ -5,10 +5,9 @@ export default [
   {
     plugins: { n: pluginN },
     languageOptions: {
-      ecmaVersion: 2022,
       globals: {
         ...globals.node,
-        ...globals.es2022,
+        ...globals.es2026,
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',
       },

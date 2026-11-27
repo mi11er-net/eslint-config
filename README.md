@@ -5,34 +5,52 @@
 
 Combines various plugins and rulesets for use in mi11er.net projects.
 
+This package is an ESLint [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) for ESLint 9 and 10. For ESLint 8 and `.eslintrc`, use version 2.x.
+
 ## Installation
 
-Note: don't forget the require peerDepencies.
+Install ESLint, this config and its required peer dependencies:
 
 ```shell
-npm install --save-dev eslint @mi11er/eslint-config eslint-plugin-optimize-regex eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-security
+npm install --save-dev eslint @mi11er/eslint-config eslint-plugin-import-x eslint-plugin-n eslint-plugin-no-unsanitized eslint-plugin-optimize-regex eslint-plugin-security
 ```
 
-or
+React/Preact projects also need:
 
 ```shell
-yarn add -D eslint @mi11er/eslint-config eslint-plugin-optimize-regex eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-security
+npm install --save-dev eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ## Setup
 
-Add the config to your `.eslintrc` file:
+Add the config to your `eslint.config.js`:
 
-```json
-{
-  "extends": "@mi11er"
-}
+```js
+import mi11er from '@mi11er/eslint-config';
+
+export default [...mi11er];
 ```
 
-or for react/preact based projects
+or for React/Preact based projects:
 
-```json
-{
-  "extends": "@mi11er/eslint-config/react"
-}
+```js
+import mi11er from '@mi11er/eslint-config/react';
+
+export default [...mi11er];
+```
+
+Add your own config objects after the spread to extend or override rules:
+
+```js
+import mi11er from '@mi11er/eslint-config';
+
+export default [
+  { ignores: ['dist/**'] },
+  ...mi11er,
+  {
+    rules: {
+      // project-specific overrides
+    },
+  },
+];
 ```
