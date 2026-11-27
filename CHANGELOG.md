@@ -1,3 +1,9 @@
+## [3.0.7](https://github.com/mi11er-net/eslint-config/compare/v3.0.6...v3.0.7) (2026-11-27)
+
+### Bug Fixes
+
+- document flat config setup and stop pinning ecmaVersion 2022 ([76a1b1d](https://github.com/mi11er-net/eslint-config/commit/76a1b1d139e6325e88857121e06e960ac205750d)), closes [#315](https://github.com/mi11er-net/eslint-config/issues/315)
+
 ## [3.0.6](https://github.com/mi11er-net/eslint-config/compare/v3.0.5...v3.0.6) (2026-11-27)
 
 ### Bug Fixes
