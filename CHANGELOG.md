@@ -1,3 +1,9 @@
+## [3.0.6](https://github.com/mi11er-net/eslint-config/compare/v3.0.5...v3.0.6) (2026-11-27)
+
+### Bug Fixes
+
+- **deps:** resolve high and critical audit vulnerabilities in lockfile ([a4446f3](https://github.com/mi11er-net/eslint-config/commit/a4446f3f29cc553dc9f810cb6cc5b80a809caa52))
+
 ## [3.0.5](https://github.com/mi11er-net/eslint-config/compare/v3.0.4...v3.0.5) (2026-06-14)
 
 ### Bug Fixes
